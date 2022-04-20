@@ -3,21 +3,15 @@
 
 
 export function RepositoryItem(props){
-    return (
-      <li>
-        <strong>{props.repositoryProps?.name ?? "Default"}</strong>
-        <p>
-        {props.repositoryProps?.description ?? "lorem ipsum"}
-        </p>
-        <a href={props.repositoryProps?.url ?? 'www.github.com/Giuzntt'}>Acessar repositorio</a>
-      </li>
-    );
-
-
-
-
-
-
+  return (
+    <li>
+      <strong>{props.repository.name}</strong>
+      <p>{props.repository.description}</p>
+      <a href={props.repository.html_url}>
+        Acessar repositorio
+      </a>
+    </li>
+  );
 }
 
 
